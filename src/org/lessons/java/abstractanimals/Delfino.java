@@ -1,6 +1,6 @@
 package org.lessons.java.abstractanimals;
 
-public class Delfino extends AbstractAnimale implements Nuotante {
+public class Delfino extends AbstractAnimale implements INuotante {
 
     protected String nome;
 

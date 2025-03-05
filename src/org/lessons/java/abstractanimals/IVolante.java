@@ -1,5 +1,5 @@
 package org.lessons.java.abstractanimals;
 
-interface Volante {
+interface IVolante {
     void vola();
 }

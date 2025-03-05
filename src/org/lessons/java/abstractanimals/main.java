@@ -6,7 +6,7 @@ public class main {
         System.out.println("-----------------------------------");
 
         // creo un delfino
-        AbstractAnimale delfinoPoppy = new Delfino("Poppy");
+        Delfino delfinoPoppy = new Delfino("Poppy");
         
         System.out.println("----- Il delfino: -----" );
         delfinoPoppy.faiVerso();
@@ -14,7 +14,7 @@ public class main {
         delfinoPoppy.dormi();
 
         // creo un cane
-        AbstractAnimale caneRex = new Cane("Rex", "Labrador");
+        Cane caneRex = new Cane("Rex", "Labrador");
         
         System.out.println("----- Il cane: -----" );
         caneRex.faiVerso();
@@ -22,7 +22,7 @@ public class main {
         caneRex.dormi();
 
         // creo un passerotto
-        AbstractAnimale passerottoPino = new Passerotto("Pino");
+        Passerotto passerottoPino = new Passerotto("Pino");
         
         System.out.println("----- Il passerotto: -----" );
         passerottoPino.faiVerso();
@@ -30,26 +30,29 @@ public class main {
         passerottoPino.dormi();
 
         // creo un aquila
-        AbstractAnimale aquilaLuna = new Aquila("Luna");
+        Aquila aquilaLuna = new Aquila("Luna");
         
         System.out.println("----- L'aquila: -----" );
         aquilaLuna.faiVerso();
         aquilaLuna.mangia();
         aquilaLuna.dormi();
 
-        // creo un volante
-        Volante aquilaSole = new Aquila("Sole");
+        // testando interfacce
+        System.out.println("----- Interfacce: -----" );
+        faiVolare(aquilaLuna);
+        faiNuotare(delfinoPoppy);
+        faiVolare(passerottoPino);
 
-        System.out.println("----- L'aquila con l'interfaccia (Volante): -----" );
-        aquilaSole.vola();
-
-        // creo un nuotante
-        Nuotante DelfinoPino = new Delfino("Pino");
-        
-        System.out.println("----- Il delfino con l'interfaccia (Nuotante): -----" );
-        DelfinoPino.nuota();
-        
         System.out.println("-----------------------------------");
     }
+
+    // metodi delle intefacce 
+    static void faiNuotare(INuotante AnimaleNuotante) {
+        AnimaleNuotante.nuota();
+    }
+    static void faiVolare(IVolante animaleVolante) {
+        animaleVolante.vola();
+    }
+
     
 }

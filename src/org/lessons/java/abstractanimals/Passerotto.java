@@ -1,6 +1,6 @@
 package org.lessons.java.abstractanimals;
 
-public class Passerotto extends AbstractAnimale implements Volante {
+public class Passerotto extends AbstractAnimale implements IVolante {
 
     protected String nome;
 
