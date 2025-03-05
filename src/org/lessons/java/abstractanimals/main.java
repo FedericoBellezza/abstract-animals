@@ -37,8 +37,6 @@ public class main {
         aquilaLuna.mangia();  
         aquilaLuna.dormi();
 
-
-
         System.out.println("-----------------------------------");
     }
     
