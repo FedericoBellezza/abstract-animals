@@ -1,6 +1,6 @@
 package org.lessons.java.abstractanimals;
 
-public class Passerotto extends AbstractAnimale {
+public class Passerotto extends AbstractAnimale implements Volante {
 
     protected String nome;
 
@@ -27,6 +27,11 @@ public class Passerotto extends AbstractAnimale {
     @Override
     public void faiVerso() {
         System.out.println("Cinguetta");
+    }
+
+    @Override
+    public void vola() {
+        System.out.println("Sto volando!");
     }
 
 }

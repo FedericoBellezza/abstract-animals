@@ -1,6 +1,6 @@
 package org.lessons.java.abstractanimals;
 
-public class Delfino extends AbstractAnimale {
+public class Delfino extends AbstractAnimale implements Nuotante {
 
     protected String nome;
 
@@ -27,6 +27,11 @@ public class Delfino extends AbstractAnimale {
     @Override
     public void faiVerso() {
         System.out.println("Frigge");
+    }
+
+    @Override
+    public void nuota() {
+        System.out.println("Sto nuotando!");
     }
 
 }

@@ -18,7 +18,7 @@ public class main {
         
         System.out.println("----- Il cane: -----" );
         caneRex.faiVerso();
-        caneRex.mangia();  
+        caneRex.mangia();
         caneRex.dormi();
 
         // creo un passerotto
@@ -34,9 +34,21 @@ public class main {
         
         System.out.println("----- L'aquila: -----" );
         aquilaLuna.faiVerso();
-        aquilaLuna.mangia();  
+        aquilaLuna.mangia();
         aquilaLuna.dormi();
 
+        // creo un volante
+        Volante aquilaSole = new Aquila("Sole");
+
+        System.out.println("----- L'aquila con l'interfaccia (Volante): -----" );
+        aquilaSole.vola();
+
+        // creo un nuotante
+        Nuotante DelfinoPino = new Delfino("Pino");
+        
+        System.out.println("----- Il delfino con l'interfaccia (Nuotante): -----" );
+        DelfinoPino.nuota();
+        
         System.out.println("-----------------------------------");
     }
     
