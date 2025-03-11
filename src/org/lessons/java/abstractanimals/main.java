@@ -53,6 +53,4 @@ public class main {
     static void faiVolare(IVolante animaleVolante) {
         animaleVolante.vola();
     }
-
-    
 }
